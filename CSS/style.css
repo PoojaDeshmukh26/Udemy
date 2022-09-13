@@ -1,0 +1,91 @@
+.main-menu{
+    background-color: teal;
+}
+.main-menu > ul{
+    list-style-type: none;
+    display: flex;
+}
+.main-menu > ul > li{
+    display: inline-block;
+}
+.main-menu > ul > li > a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding:10px;
+    font-family: serif;
+    font-size: medium;
+}
+.main-menu > ul >li >a:hover{
+    background-color: black;
+    border-radius: 10px;
+}
+.drop-down{
+    list-style-type: none;
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    display: none;
+}
+.drop-down>li >a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding:10px;
+    font-family: serif;
+    font-size: medium;
+    background-color: aqua;
+}
+.drop-down>li >a:hover{
+    background-color: chartreuse;
+}
+.main-menu > ul > li:hover  .drop-down{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding:10px;
+    font-family: serif;
+    font-size: medium;
+}
+.banner{
+    width: 100px;
+    height: auto;
+}
+.content-holder{
+background-color: blueviolet;
+}
+
+.content{
+    width: 800px;
+    height: auto;
+    padding: 25px;
+    background-color: white;
+    float: left;
+}
+.content h1{
+    font-size: 1.5em;
+    font-family: serif;
+}
+.content p{
+    font-family: serif;
+    font-size: large;
+}
+.sidebar{
+    float: left;
+    padding: 25px;
+}
+.sidebar h3{
+    font-family: serif;
+}
+.sidebar ul{
+    margin: 0px;
+    padding: 0px;
+    list-style-type:none;
+}
+.sidebar ul>li >a{
+    display: block;
+    margin-bottom: 5px;
+    font-family: serif ;
+    font-style: italic;
+    text-decoration: none;
+}
