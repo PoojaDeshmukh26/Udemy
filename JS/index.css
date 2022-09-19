@@ -1,0 +1,23 @@
+h1{
+    color: white;
+}
+button{
+    background-color: burlywood;
+color:white;
+padding: 5px;
+border-radius: 10px;
+}
+
+.center{
+    background-color: cadetblue;
+    display: flex;
+margin-left: auto;
+margin-right: auto;
+width: 20%;
+margin-bottom: 5px;
+}
+
+body{
+    background-color: black;
+}
+
