@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Side Menu </title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        .sidebar{
+            height:550px;
+            width: 20%;
+            background-color: rgb(156, 156, 244);
+            color: black;
+            display:none  ;
+        }
+        .btn{
+            display: flex;
+        }
+        .humburgerBtn{
+            width: 40px;
+            margin-left: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+        position: relative;
+        }
+        .btn header{
+            text-align: center;
+            padding: 15px;
+            font-size: larger;
+            font-family: sans-serif;
+            margin-right: 30px;
+        }
+        .fa-ul{
+            list-style-type: none;
+            
+        }
+        li a{
+            text-decoration: none;
+            color: black;
+            font-family: sans-serif;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="btn">
+        <img  class="humburgerBtn"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJAAAACQCAMAAADQmBKKAAAAV1BMVEX///8AAAD39/c8PDzy8vLr6+sUFBRCQkLk5OSHh4fKysr6+vrGxsaQkJBGRkYaGhphYWHZ2dlsbGwtLS1UVFQnJyd4eHjQ0NBaWlpnZ2c0NDSBgYFMTEyDpErgAAABUUlEQVR4nO3bW7KCMBBF0QQFxQeIqIgy/3Eqdev+deQvfajaawS7IkpsQggAAAAAAKzKscjquJBzOjdtlVHbnE8/cvaX6OCyT/V0lUdPjFWXWB+fnJm9Rle/oKt5Pfv1xGhd2bVnUG0E9Z5BvRHk2RPjGoJenj0vI+jtGfQ2gg6eQQcjKNz8em5WTyhbr562NIPCcPfpuQ92z/f2Onr0jMntx7xIj2mT1fRILs+/bVZLNQAAACjKrIqFnKF+NruMmmf9awvbTR6b/Ckx0fsuj9NEpk8sktyM0eVP2Z/R6pEbNsjNGOUGVp49zBgXWR+Z3EUt97WX+2HUu3XI3Vz1th9BboM2E9vCAgAAQOwhsNhjcrWDBGpHLeQOo6gd15EbNsgd+ZIbWHn2rGPGKHf0VG7GKHd8We6At+CMUe0lAb3XKILciyYzsVdxAAAAAAAQ8wGzeDhN4rI6GwAAAABJRU5ErkJggg==" alt="">
+        <header>My app</header>
+    </div>
+        <ul class="fa-ul">
+            <li><a href="#"><i class="fas fa-home"></i>Home</a></li><hr>
+
+            <li><a href="#"><i class="fas fa-link"></i>Explore</a></li>
+            <li><a href="#"><i class="fas fa-shorts"></i>Shorts</a></li>
+            <li><a href="#"><i class="fas fa-subscriptions"></i>Subscriptions</a></li>
+            <li><a href="#"><i class="fas fa-library"></i>Library</a></li>
+            <li><a href="#"><i class="fas fa-history"></i>History</a></li>
+            <li><a href="#"><i class="fas fa-watchlater"></i>Watch Later</a></li>
+            <li><a href="#"><i class="fas fa-downloads"></i>Downloads</a></li>
+        </ul>
+    </div>
+</body>
+</html>

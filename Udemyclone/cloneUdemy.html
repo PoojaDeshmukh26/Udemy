@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Udemy Business</title>
+    <link rel="stylesheet" href="CSS/cloneUdemy.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav class="nav">
+          <img
+            class="logo"
+            src="data:image/png;base64,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"
+            alt="This is Udemy Business"
+          />
+          <ul class="navlist">
+            <li><a href="#">what we do</a>
+              <div class="drop-down1">
+                <div>
+                <h3>By need</h3>
+                <ul>
+                  <li><a href="#">Enterprise-Wide Traning</a></li>
+                  <li><a href="#">Small Team Traning</a></li>
+                  <li><a href="#">Tech Team Traning</a></li>
+                  <li><a href="#">Leadership Development</a></li>
+                  <li><a href="#">Dedicated Customer Success Team</a></li>
+                  <li><a href="#">Remote & Hybrid Team Traning</a></li>
+                </ul>
+              </div>
+              <div>
+                <h3>By team</h3>
+                <ul>
+                  <li><a href="#">Leaders & Executive</a></li>
+                  <li><a href="#">Learning  & Developement</a></li>
+                  <li><a href="#">Human Resources</a></li>
+                  <li><a href="#">Engineering</a></li>
+                  <li><a href="#">IT Operations</a></li>
+                  <li><a href="#">Data Science</a></li>
+                </ul>
+              </div>
+              <div>
+                <h3>By industry</h3>
+              <ul>
+                <li><a href="#">Technology</a></li>
+                <li><a href="#">Professional Services</a></li>
+                <li><a href="#">Financial Services</a></li>
+                <li><a href="#">Manufacturing</a></li>
+                <li><a href="#">Government</a></li>
+                <li><a href="#">Higher Ed</a></li>     
+              </ul>
+            </div>
+              </div>
+            </li>
+            <li>
+              <a href="#">How we do it</a>
+              <div class="drop-down2" >
+              <ul>
+                <li>Integrated Solutions Overview</li>
+                <li>On-Demand Learning <span><i class="fa-solid fa-greater-than"></i></span></li>
+                <li>Immersive Learning</li>
+                <li>Cohurt Learning<span><i class="fa-solid fa-greater-than"></i></span></li>
+              </ul>
+            </div>
+            </li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">plan</a></li>
+          </ul>
+          <button class="login">Login</button>
+          <div class="dropd">
+          <ul>
+            <li><a href="#">On-Demand Learning</a></li>
+            <li><a href="#">Cohurt Learning(CourpU)</a></li>
+          </ul>
+        </div>
+          <button class="getstarted">Get Started</button>
+        </nav>
+      </header>
+      <main>
+        <div class="mids">
+          <div class="mid1">
+            <div class="box1">
+              <h1>Get a free demo</h1>
+              <p>
+                See why leading organization choose Udemy Business as their
+                desination for employee learning.
+              </p>
+            </div>
+            <!--box1-->
+            <div class="box2">
+              <h2>In your demo, learn more about:</h2>
+              <p>
+              <img class="righticon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAARVBMVEX///8CAgLExMTBwcHNzc3Kysr8/Px0dHRLS0u2trb4+PhycnJvb292dnZqampiYmJnZ2dBQUFGRkY/Pz86Ojrz8/MRERFybePMAAAD7klEQVR4nO2b7VbbQAxEcflMIbRA2/d/1JIoy2mKY69X2tVIzP2fE8/RHWvB8dUVIYQQQgghhBBCCCGEEEIIMeL2h/cVdOZ2mnJHfA84Tc/eV9GRY8Bp+ul9Hd04Bcwr6kfArFP8J2DOLt5MZ+QT9Xaackf8FDBbF28+B8zVxdmAmUSdUTRXxIsBs4h6QdE8t5uFCeYQdSVg/CkuKpqhixUBY4u6qmj0iJUB44papWjkiBsCxhS1WtGoETcGjCfqJkWFWKt/8wQPRBK1KWCkKTYoKkTpYnPAKFNsVPTIN++Lr0ET8Nr74mtQKBojIBX9ygFDKKrpYPoJpg+YXtH0AdMrmj5gekVDBKSi0QOmV5Rr4isHTK9o+oDpFW0KeP3bOsIywzu4mx7urEMsMVzR3fsHXwZGHK7o7vjRt2ERHRQVHr5bR5ln+JrYfXx8TBddOlj4NSCiUwcLr91FdetgoXcXHTtYeO0qqmsHCz276NzBQj9RARQ9Rew0RQhFhT6nGxBFhR5nVPc1cY59F2E6WLBeGkAdLNguDagOFiwPcGAdLNh1Ea6DBasuAnawYNNFyA4WLESFVfQUUT1FYEUF7QEOWlHhRSUq6Jo4R9NF8A4W2pcGfAcLrUsjQAcLbQe48c8H79u/sGVpeDwffGr/yu1/Evs8AFVMcete9HpG/9j+tduWht8z+mdFxA1T9HxGr5hi/dLw/Z2Moou1S8P7dzKKO2pdF/1/J6OIWHOAQ/idjELU9S5i/FZNc7pZEdVfUaHb0kBQVFAsjaUDHIaigkLUyxG918Q5HZYGSgcLii7OLw2cDhaMlwZSBw0ifj7AoSkqGHYRM6DhAQ6vgwWjLiJ2sGDyVz+qooLBAQ5XUUExRfn3FLKigvIAh3VUm0ezNO6wO2gQ8e1P+2dHvvmiEDVGQJeIo1/OUiyNNsa/nKVYGjECDhbV5/W6gVP0ekFyWBf9XpAcJKrnG6D7EQF93+FVnG5iBBwQ0f8l5c6i+gfsfLvxVlTouDQQJnig2+pHCditixiKCl2miBSwSxdxFBXM76hoAc27iKWoYHq6QQxoGhFPUcFMVNSAZrcbTEUFE1FxJ3jAYIrYAQ26iKyooDzA4QdUdhFdUUEhaoyAiogRFBUaRY0TsPF2E0VRoUHUWAEbVn8kRYWNXYw2wQObphgx4KYuxlNUqL6jRg1Y3cWYigpVokYOWBUxrqLCqqixJ3hgZWnED7gianRFhYUp5gi40MUMigoXRM0T8ELELIoKM6LmCjhzRs2kqLDPHvC/iNkUFZ5yT/DAPnvAj4g5FRXuswc8djGvosJj7gkSQgghhBBCCCGEEEIIIYQ08RfO/zs1WFT8EwAAAABJRU5ErkJggg==" alt="">
+                Unlimited access to 17,000+ top courses selected from uDemy.com
+                - anytime, on any device
+              </p>
+              <p>
+                <img  class="righticon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAARVBMVEX///8CAgLExMTBwcHNzc3Kysr8/Px0dHRLS0u2trb4+PhycnJvb292dnZqampiYmJnZ2dBQUFGRkY/Pz86Ojrz8/MRERFybePMAAAD7klEQVR4nO2b7VbbQAxEcflMIbRA2/d/1JIoy2mKY69X2tVIzP2fE8/RHWvB8dUVIYQQQgghhBBCCCGEEEIIMeL2h/cVdOZ2mnJHfA84Tc/eV9GRY8Bp+ul9Hd04Bcwr6kfArFP8J2DOLt5MZ+QT9Xaackf8FDBbF28+B8zVxdmAmUSdUTRXxIsBs4h6QdE8t5uFCeYQdSVg/CkuKpqhixUBY4u6qmj0iJUB44papWjkiBsCxhS1WtGoETcGjCfqJkWFWKt/8wQPRBK1KWCkKTYoKkTpYnPAKFNsVPTIN++Lr0ET8Nr74mtQKBojIBX9ygFDKKrpYPoJpg+YXtH0AdMrmj5gekVDBKSi0QOmV5Rr4isHTK9o+oDpFW0KeP3bOsIywzu4mx7urEMsMVzR3fsHXwZGHK7o7vjRt2ERHRQVHr5bR5ln+JrYfXx8TBddOlj4NSCiUwcLr91FdetgoXcXHTtYeO0qqmsHCz276NzBQj9RARQ9Rew0RQhFhT6nGxBFhR5nVPc1cY59F2E6WLBeGkAdLNguDagOFiwPcGAdLNh1Ea6DBasuAnawYNNFyA4WLESFVfQUUT1FYEUF7QEOWlHhRSUq6Jo4R9NF8A4W2pcGfAcLrUsjQAcLbQe48c8H79u/sGVpeDwffGr/yu1/Evs8AFVMcete9HpG/9j+tduWht8z+mdFxA1T9HxGr5hi/dLw/Z2Moou1S8P7dzKKO2pdF/1/J6OIWHOAQ/idjELU9S5i/FZNc7pZEdVfUaHb0kBQVFAsjaUDHIaigkLUyxG918Q5HZYGSgcLii7OLw2cDhaMlwZSBw0ifj7AoSkqGHYRM6DhAQ6vgwWjLiJ2sGDyVz+qooLBAQ5XUUExRfn3FLKigvIAh3VUm0ezNO6wO2gQ8e1P+2dHvvmiEDVGQJeIo1/OUiyNNsa/nKVYGjECDhbV5/W6gVP0ekFyWBf9XpAcJKrnG6D7EQF93+FVnG5iBBwQ0f8l5c6i+gfsfLvxVlTouDQQJnig2+pHCditixiKCl2miBSwSxdxFBXM76hoAc27iKWoYHq6QQxoGhFPUcFMVNSAZrcbTEUFE1FxJ3jAYIrYAQ26iKyooDzA4QdUdhFdUUEhaoyAiogRFBUaRY0TsPF2E0VRoUHUWAEbVn8kRYWNXYw2wQObphgx4KYuxlNUqL6jRg1Y3cWYigpVokYOWBUxrqLCqqixJ3hgZWnED7gianRFhYUp5gi40MUMigoXRM0T8ELELIoKM6LmCjhzRs2kqLDPHvC/iNkUFZ5yT/DAPnvAj4g5FRXuswc8djGvosJj7gkSQgghhBBCCCGEEEIIIYQ08RfO/zs1WFT8EwAAAABJRU5ErkJggg==" alt="">
+                Fresh content taught by global instructers - for any learning
+                style
+              </p>
+              <p>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAARVBMVEX///8CAgLExMTBwcHNzc3Kysr8/Px0dHRLS0u2trb4+PhycnJvb292dnZqampiYmJnZ2dBQUFGRkY/Pz86Ojrz8/MRERFybePMAAAD7klEQVR4nO2b7VbbQAxEcflMIbRA2/d/1JIoy2mKY69X2tVIzP2fE8/RHWvB8dUVIYQQQgghhBBCCCGEEEIIMeL2h/cVdOZ2mnJHfA84Tc/eV9GRY8Bp+ul9Hd04Bcwr6kfArFP8J2DOLt5MZ+QT9Xaackf8FDBbF28+B8zVxdmAmUSdUTRXxIsBs4h6QdE8t5uFCeYQdSVg/CkuKpqhixUBY4u6qmj0iJUB44papWjkiBsCxhS1WtGoETcGjCfqJkWFWKt/8wQPRBK1KWCkKTYoKkTpYnPAKFNsVPTIN++Lr0ET8Nr74mtQKBojIBX9ygFDKKrpYPoJpg+YXtH0AdMrmj5gekVDBKSi0QOmV5Rr4isHTK9o+oDpFW0KeP3bOsIywzu4mx7urEMsMVzR3fsHXwZGHK7o7vjRt2ERHRQVHr5bR5ln+JrYfXx8TBddOlj4NSCiUwcLr91FdetgoXcXHTtYeO0qqmsHCz276NzBQj9RARQ9Rew0RQhFhT6nGxBFhR5nVPc1cY59F2E6WLBeGkAdLNguDagOFiwPcGAdLNh1Ea6DBasuAnawYNNFyA4WLESFVfQUUT1FYEUF7QEOWlHhRSUq6Jo4R9NF8A4W2pcGfAcLrUsjQAcLbQe48c8H79u/sGVpeDwffGr/yu1/Evs8AFVMcete9HpG/9j+tduWht8z+mdFxA1T9HxGr5hi/dLw/Z2Moou1S8P7dzKKO2pdF/1/J6OIWHOAQ/idjELU9S5i/FZNc7pZEdVfUaHb0kBQVFAsjaUDHIaigkLUyxG918Q5HZYGSgcLii7OLw2cDhaMlwZSBw0ifj7AoSkqGHYRM6DhAQ6vgwWjLiJ2sGDyVz+qooLBAQ5XUUExRfn3FLKigvIAh3VUm0ezNO6wO2gQ8e1P+2dHvvmiEDVGQJeIo1/OUiyNNsa/nKVYGjECDhbV5/W6gVP0ekFyWBf9XpAcJKrnG6D7EQF93+FVnG5iBBwQ0f8l5c6i+gfsfLvxVlTouDQQJnig2+pHCditixiKCl2miBSwSxdxFBXM76hoAc27iKWoYHq6QQxoGhFPUcFMVNSAZrcbTEUFE1FxJ3jAYIrYAQ26iKyooDzA4QdUdhFdUUEhaoyAiogRFBUaRY0TsPF2E0VRoUHUWAEbVn8kRYWNXYw2wQObphgx4KYuxlNUqL6jRg1Y3cWYigpVokYOWBUxrqLCqqixJ3hgZWnED7gianRFhYUp5gi40MUMigoXRM0T8ELELIoKM6LmCjhzRs2kqLDPHvC/iNkUFZ5yT/DAPnvAj4g5FRXuswc8djGvosJj7gkSQgghhBBCCCGEEEIIIYQ08RfO/zs1WFT8EwAAAABJRU5ErkJggg==" alt="" class="righticon">
+                Actionable learning insights and admin functionality</p>
+            </div>
+            <!--box2-->
+            <div class="box3">
+              <h2>Trusted by:</h2>
+              <div class="image">
+                  <img
+                    src="https://business.udemy.com/wp-content/uploads/2021/12/gofundme.png.webp"
+                    alt=""
+                  />
+                  <img
+                    src="https://business.udemy.com/wp-content/uploads/2021/07/Box.png.webp"
+                    alt=""
+                  />
+                  <img
+                    src="https://business.udemy.com/wp-content/uploads/2021/12/Fender.png.webp"
+                    alt=""
+                  />
+                  <img
+                    src="https://business.udemy.com/wp-content/uploads/2021/07/Aflac-1.png.webp"
+                    alt=""
+                  />
+                  <img
+                    src="https://business.udemy.com/wp-content/uploads/2021/07/VW-logo-grey.png.webp"
+                    alt=""
+                  />
+                  <img
+                    src="https://business.udemy.com/wp-content/uploads/2021/07/Tata.TCS_.png.webp"
+                    alt=""
+                  />
+                
+              </div><!--image div-->
+            </div><!--box3-->
+            
+          </div>
+          <!--mid1-->
+          <div class="mid2">
+            <input
+              class="input"
+              type="email"
+              placeholder="Work Email*"
+              required
+            />
+            <input
+              class="input"
+              type="text"
+              placeholder="Frist Name*"
+              required
+            />
+            <input
+              class="input"
+              type="text"
+              placeholder="Last Name*"
+              required
+            />
+            <input
+              class="input"
+              type="number"
+              placeholder="Phone Number*"
+              required
+            />
+            <input
+              class="input"
+              type="text"
+              placeholder="Company Name*"
+              required
+            />
+            <input
+              class="input"
+              type="text"
+              placeholder="Job Title*"
+              required
+            />
+            <input
+              class="input"
+              type="text"
+              placeholder="What are your training needs?*"
+              required
+            />
+            <button class="getin">Get in touch</button>
+            <p class="p">
+              By signing up, you to our <a href="#">terms</a> and
+              <a href="#">privacy policy.</a> You agree that we can contact you
+              about Udemy and use data from third parties to personalize your
+              experience.
+            </p>
+          </div>
+          <!--mid2-->
+        </div>
+        <!--mid section-->
+      </main>
+      <footer class="footer">
+        <div class="footerdiv">
+        <div>
+            <ul>
+                <li><a href="#">Udemy.com</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Partnership & Integrations</a></li>
+                <li><a href="#">Take a product tour</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Investor Relations</a></li>
+                <li><a href="#">Careers - we're hiring!</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>
+                <a href="#">Help</a>    
+                </li>
+                <li><a href="#">Terms & conditions</a> </li>
+                <li><a href="#">Privacy policy</a> </li>
+                <li><a href="#">Cookie settings</a> </li>
+                <li><a href="#">Sitemap</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Follow us</h3>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+    </div><!--footer div-->
+    <div ><img
+        id="footerlogo"
+        src="data:image/png;base64,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"
+        alt="This is Udemy Business"
+      />
+      
+    </div>
+    <h4 class="f"><i class="fa-regular fa-copyright"></i>2022 Udemy,Inc.</h4>
+      </footer>
+    </div>
+    <!----conatiner -->
+  </body>
+</html>

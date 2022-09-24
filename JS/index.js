@@ -3,7 +3,7 @@ btn.addEventListener("click",showMsg);
 function showMsg(){
     alert("hello")
 }
-
+   
 let btn2=document.querySelector(".input");
 btn2.addEventListener("click",inputMsg);
 function inputMsg(){
